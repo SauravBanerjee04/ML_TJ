@@ -1,0 +1,10 @@
+#
+import matplotlib.pyplot as plt
+#
+plt.contour(xp, yp, zp)
+plt.scatter(7.032593548,0.04753664, color = 'ff0000', marker = '.')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+
+#xp is 1-d yp is 10d zp is 2-d

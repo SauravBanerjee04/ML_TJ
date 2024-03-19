@@ -1,0 +1,24 @@
+#
+import numpy as np
+#
+xp = np . arange( 5.0 , 9.0 , 4.0 / 100 )
+yp = np . arange( .03 , .07 , .04 / 100 )
+#
+zp = np . zeros( ( yp . size , xp . size ) )
+#
+xp , yp = np . meshgrid( xp , yp )
+#
+# *** calculate zp here ***
+#
+import matplotlib.pyplot as plt
+#
+fig = plt . figure()
+ax  = plt . axes( projection = '3d' )
+ax  . plot_surface( xp , yp , zp )
+ax  . scatter( 7.0325935491277 , 0.04753664, 2102.53 , color = '#ff0000' )
+plt . show()
+#
+# can also use 'fig' and 'ax'
+# to add contour labels in the
+# previous example
+#
